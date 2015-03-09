@@ -5,64 +5,98 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- if using browserify, uncomment the line below -->
+   	<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <!-- <link rel="stylesheet" type="text/css" href="./dist/style.css"> -->
 </head>
 
-<body>
+<body class="general">
     <div class="wrapper">
     	<!-- Hamburger Navigation Button -->
   		<a class="btn nav-burger"><i class="fa fa-bars"></i></a>
 		<!-- Header -->
-  		<header>
+  		<header class="container-fluid">
   			<div class="vertical-align-text h-greeting">
   				<h1>Travis Hubbard</h1>
 				<h2>Web Developer</h2>
 				<br>
-				<a class='btn find-out-btn'>Click me forever </a>
+				<a class='btn find-out-btn-lg'>Click me forever </a>
   			</div>
   		</header>
 
-  		<div class="row about">
-  			<div class="col-xs-12">
+  		<section class="container-fluid about">
 				<h2>I am better than you at developing the web</h2>
 				<h4>Please look at my portfolio it is very nice</h4>
-  			</div>
+  		</section>
 
-  		</div>
-
-  		<section class="row services">
-  			<h2>Portfolio Samples</h2>
+  		<section class="container-fluid services">
+  			<h2>Services</h2>
   			<hr>
-  			<div class="row about">
-	  			<div class="col-xs-12">
+  			<div class="container-fluid about">
 					<i class="fa fa-paper-plane-o fa-5x"></i>
-					<h4>Check It!</h4>
-					<p>Turn your head and I'll steal your girl.</p>
-					<br>
-					<a class='btn-learn-more'>Learn More</a>
-	  			</div>
-  			</div>
-  			<div class="row about">
-	  			<div class="col-xs-12">
-					<i class="fa fa-motorcycle fa-5x"></i>
-					<h4>Check It!</h4>
-					<p>Turn your head and I'll steal your girl.</p>
-					<br>
-					<a class='btn-learn-more'>Learn More</a>
-	  			</div>
-  			</div>
-  			<div class="row about">
-	  			<div class="col-xs-12">
-					<i class="fa fa-heartbeat fa-5x"></i>
-					<h4>Check It!</h4>
+					<h3>Check It!</h3>
 					<p>Turn your head and I'll steal your girl.</p>
 					<br>
 					<a class='btn btn-learn-more'>Learn More</a>
-	  			</div>
+  			</div>
+  			<div class="container-fluid about">
+					<i class="fa fa-motorcycle fa-5x"></i>
+					<h3>Motorcycles</h3>
+					<p>People like to ride them. I do not.</p>
+					<br>
+					<a class='btn btn-learn-more'>Learn More</a>
+  			</div>
+  			<div class="container-fluid about">
+					<i class="fa fa-heartbeat fa-5x"></i>
+					<h3>Heart-EKG</h3>
+					<p>My heart races for you, baby shampu</p>
+					<br>
+					<a class='btn btn-learn-more'>Learn More</a>
   			</div>
   		</section>
 
-		
+  		<section class="container-fluid details">
+  			<div class="underlay"></div>
+  			<div class="vertical-align-text content">
+  				<h2>I will make your dreams come true for real with vertically centered text</h2>
+  			</div>
+  		</section>
+
+	<section class="container-fluid my-work">
+  		<h2>My Work</h2>
+  		<hr>
+  		<div class="row">
+  			<div class="col-xs-12 col-sm-6 work-container">
+  			 	<div class="work-sample"></div>
+  			</div>
+			<div class="col-xs-12 col-sm-6 work-container">
+			  	<div class="work-sample"></div>
+			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-xs-12 col-sm-6 work-container">
+  			 	<div class="work-sample"></div>
+  			</div>
+			<div class="col-xs-12 col-sm-6 work-container">
+			  	<div class="work-sample"></div>
+			</div>
+  		</div>
+
+  		<button class="btn find-out-btn-sm">More Examples</button>
+
+  	</section>
+
+	
+  	<section class="container-fluid before-after">
+  		<h3>Try me out some time</h3>
+  		<br>
+		<button class="btn find-out-btn-lg">Before</button>
+		<button class="btn find-out-btn-lg">After</button>
+  	</section>
+
+
+
+
+
 
     </div>
     <!-- if using loader, use the line below -->
