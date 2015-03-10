@@ -328,13 +328,16 @@ header {
     }
 
     .work-container{
+        outline: 1px solid rgba(200,0,0,.3);
         padding: 2.5%;
 
-        .work-sample{
-            height: 15rem;
-            border: 1px solid #333;
-            background: rgba(104,33,22,.6)
+        img{
+            max-width: 40%;
         }
+    }
+
+    button {
+        margin-top: 20px
     }
 }
 
