@@ -102,7 +102,8 @@ body {
 
 
 //Custom-General
- hr{
+ 
+hr{
         width: 25%;
     }
 
@@ -230,12 +231,12 @@ nav {
                 a, 
                 a:visited{
                 text-decoration: none;
+                width: 55%;
                 }
 
                 li{
                     font-size: 18px;
                     padding: 2.4rem 1.0rem;
-                    width: 55%;
                     color: rgba(255,255,255,1);
                     transition: background .2s;
                     
@@ -301,6 +302,16 @@ header {
         z-index: 2;
         color: rgba(255,255,255,1);
         padding: 6% 3% 6% 3%;
+    
+        blockquote {
+            text-indent: -8px;
+            font-size: 16px;
+            text-align: left;
+            p.byline{
+                text-align: right;
+                font-size: 21px
+            }
+        }
     }
 
     .underlay {
@@ -378,6 +389,17 @@ footer{
         }
     }
 }
+
+footer{
+    position: relative;
+    top:0;
+    right: 0;
+    color: black;
+    .great{
+        position: absolute;
+    }
+}
+
 
 
 
