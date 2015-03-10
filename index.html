@@ -12,7 +12,9 @@
 <body class="general">
     <div class="wrapper">
     	<!-- Hamburger Navigation Button -->
-  		<a class="btn nav-burger"><i class="fa fa-bars"></i></a>
+  		<div class="fixed-right">
+  			<a class="btn contact-anchor" href="#footer" >Contact Me</a><a class="btn nav-burger"><i class="fa fa-bars"></i> </a>
+  		</div>
 		<!-- Header -->
   		<header class="container-fluid">
   			<div class="vertical-align-text h-greeting">
@@ -23,76 +25,85 @@
   			</div>
   		</header>
 
-  		<section class="container-fluid about">
+  		<div class="container-fluid about">
 				<h2>I am better than you at developing the web</h2>
 				<h4>Please look at my portfolio it is very nice</h4>
-  		</section>
+  		</div>
 
-  		<section class="container-fluid services">
+  		<div class="container-fluid services">
   			<h2>Services</h2>
   			<hr>
-  			<div class="container-fluid about">
-					<i class="fa fa-paper-plane-o fa-5x"></i>
-					<h3>Check It!</h3>
-					<p>Turn your head and I'll steal your girl.</p>
-					<br>
-					<a class='btn btn-learn-more'>Learn More</a>
+  			<div class="container-fluid">
+	  			<div class="row">
+		  			<div class="col-xs-12 col-md-4 about">
+							<i class="fa fa-pencil fa-5x"></i>
+							<h3>Design</h3>
+							<p>Do you have a business or an existing product and lack a front-facing web presence? </p>
+							<br>
+							<a class='btn btn-learn-more'>Learn More</a>
+		  			</div>
+		  			<div class="col-xs-12 col-md-4 about">
+							<i class="fa fa-cogs fa-5x"></i>
+							<h3>Development</h3>
+							<p>Building exactly what you need for mobile, tablet, and desktop platforms.</p>
+							<br>
+							<a class='btn btn-learn-more'>Learn More</a>
+		  			</div>
+		  			<div class="col-xs-12 col-md-4 about">
+							<i class="fa fa-user fa-5x"></i>
+							<h3>User-Experience</h3>
+							<p>Who is your user? We will build your site to enhance their experience.</p>
+							<br>
+							<a class='btn btn-learn-more'>Learn More</a>
+		  			</div>
+	  			</div>
   			</div>
-  			<div class="container-fluid about">
-					<i class="fa fa-motorcycle fa-5x"></i>
-					<h3>Motorcycles</h3>
-					<p>People like to ride them. I do not.</p>
-					<br>
-					<a class='btn btn-learn-more'>Learn More</a>
-  			</div>
-  			<div class="container-fluid about">
-					<i class="fa fa-heartbeat fa-5x"></i>
-					<h3>Heart-EKG</h3>
-					<p>My heart races for you, baby shampu</p>
-					<br>
-					<a class='btn btn-learn-more'>Learn More</a>
-  			</div>
-  		</section>
+  		</div>
 
-  		<section class="container-fluid details">
+  		<div class="container-fluid details">
   			<div class="underlay"></div>
   			<div class="vertical-align-text content">
-  				<h2>I will make your dreams come true for real with vertically centered text</h2>
+  				<h2>I will make your dreams come true for real with vertically centered text and transluscent div-overlays on top of background images</h2>
   			</div>
-  		</section>
+  		</div>
 
-	<section class="container-fluid my-work">
+	<div class="container-fluid my-work">
   		<h2>My Work</h2>
   		<hr>
-  		<div class="row">
-  			<div class="col-xs-12 col-sm-6 work-container">
-  			 	<div class="work-sample"></div>
-  			</div>
-			<div class="col-xs-12 col-sm-6 work-container">
-			  	<div class="work-sample"></div>
-			</div>
-  		</div>
-  		<div class="row">
-  			<div class="col-xs-12 col-sm-6 work-container">
-  			 	<div class="work-sample"></div>
-  			</div>
-			<div class="col-xs-12 col-sm-6 work-container">
-			  	<div class="work-sample"></div>
-			</div>
+  		<div class="container-fluid">
+	  		<div class="row">
+	  			<div class="col-xs-12 col-sm-6 work-container">
+	  			 	<div class="work-sample"></div>
+	  			</div>
+				<div class="col-xs-12 col-sm-6 work-container">
+				  	<div class="work-sample"></div>
+				</div>
+	  		</div>
+	  	</div>
+	  	 <div class="container-fluid">
+	  		<div class="row">
+	  			<div class="col-xs-12 col-sm-6 work-container">
+	  			 	<div class="work-sample"></div>
+	  			</div>
+				<div class="col-xs-12 col-sm-6 work-container">
+				  	<div class="work-sample"></div>
+				</div>
+	  		</div>
   		</div>
 
   		<button class="btn find-out-btn-sm">More Examples</button>
 
-  	</section>
+  	</div>
 
 	
-  	<section class="container-fluid before-after">
+  	<div class="container-fluid before-after">
   		<h3>Try me out some time</h3>
 		<button class="btn find-out-btn-lg selected">Before</button>
 		<button class="btn find-out-btn-lg">After</button>
-  	</section>
-
+  	</div>
+	
 	<footer class="container-fluid">
+		<a name="footer"></a>
 		<div>
 			<h3>Get in touch</h3>
 			<hr>
@@ -110,6 +121,7 @@
 			</p>
 			<hr>
 			<h6>Copyright: Travis Hubbard 2015</h6>
+			<br><br><br><br><br><br><br><br><br><br>
 		</div>
 	</footer>
 

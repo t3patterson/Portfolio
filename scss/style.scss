@@ -2,15 +2,22 @@
 @import "../bower_components/font-awesome-sass/assets/stylesheets/font-awesome.scss";
 @import "./mixins.scss";
 //color-scheme
-//Blues : https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.18308960655772577,0.2545425534495107,0.3215686274509804,0.451228592702904,0.6939164836712568,0.9215686274509803,0.46777161675418955,0.650325182288689,0.8215686274509804,0.27956019479301986,0.30123587020113934,0.3215686274509804,0.25710692920880635,0.35744603694769705,0.45156862745098036&swatchOrder=0,1,2,3,4
+//Blues : https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=1&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.19033178904019846,0.26400861060417813,0.3215686274509804,0.4719836278660879,0.7243822241243825,0.9215686274509803,0.48627450980392156,0.6745098039215687,0.8215686274509804,0.2868023772754925,0.30632027211086266,0.3215686274509804,0.26727689643876645,0.37073892086672083,0.45156862745098036&swatchOrder=0,1,2,3,4
 //Greens: https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.1377958705563537,0.3215686274509804,0.24201717288226635,0.3214233736745816,0.9215686274509803,0.6617780649259944,0.35205164489702556,0.8215686274509804,0.6183243624248146,0.23426645879164779,0.3215686274509804,0.2837773104940535,0.25710692920880635,0.6,0.45156862745098036&swatchOrder=0,1,2,3,4
 
-$my-light-blue: rgba(124,172,217,1.0);
+
+//The_Blues
+$my-baby-blue: rgba(120,185,235,1.0);
+$my-light-blue: rgba(124,172,209,1.0);
 $my-medium-blue: rgba(89,122,154,1.0);
 $my-dark-blue: rgba(47,65,82,1.0);
 $my-dark-blue-translucent: rgba(47,65,82,.7);
 $my-dark-gray: rgba(89,96,102,1.0);
-$my-dark-gray-transluscent: rgba(89,96,102,.7);
+$my-dark-gray-translucent: rgba(89,96,102,.7);
+
+//The_Greens
+$my-medium-green: rgba(63,147,111,1);
+$my-medium-green-translucent: rgba(63,147,111,.6);
 
 
 /**
@@ -151,15 +158,38 @@ header {
     position: relative;
 }
 
-.nav-burger{
+.fixed-right {
     position: fixed;
     top: 5px;
     right: 10px;
-    background: $my-dark-gray-transluscent;
-    color: rgba(255,255,255,1.0);
     z-index: 5;
-    border-radius: 0px
+    font-size: 0px;
+
+    .contact-anchor,
+    .nav-burger{
+        transition: background .2s;
+        &:hover{
+            background: $my-baby-blue;
+        }
+    }
+
+    .contact-anchor {
+        display: inline-block;
+        background: $my-medium-green-translucent;
+        color: #fff;
+        margin-right: .5rem;   
+    }
+
+    .nav-burger{
+        display: inline-block;
+        background: $my-dark-gray-translucent;
+        color: rgba(255,255,255,1.0);
+        border-radius: 0px;
+    }
+
 }
+
+
 
 .h-greeting {
     color: rgba(47,65,83,1);
@@ -248,7 +278,9 @@ header {
     padding: 5%;
     color: rgba(255,255,255,1.0);
     text-align: center;
-
+    h3{
+        margin-top: 0
+    }
     button {
         background: $my-dark-blue-translucent;
     
@@ -266,10 +298,11 @@ header {
 footer{
     color: rgba(255,255,255,1);
     text-align: center;
-    background: $my-light-blue;
+    background: $my-medium-green;
     p {
+
         .fa-2x {
-            color: $my-medium-blue;
+            color: $my-baby-blue;
             
             &:hover{
                 color: $my-dark-blue;
