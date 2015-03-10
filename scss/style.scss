@@ -5,7 +5,7 @@
 //Blues : https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=1&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.19033178904019846,0.26400861060417813,0.3215686274509804,0.4719836278660879,0.7243822241243825,0.9215686274509803,0.48627450980392156,0.6745098039215687,0.8215686274509804,0.2868023772754925,0.30632027211086266,0.3215686274509804,0.26727689643876645,0.37073892086672083,0.45156862745098036&swatchOrder=0,1,2,3,4
 //Greens: https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.1377958705563537,0.3215686274509804,0.24201717288226635,0.3214233736745816,0.9215686274509803,0.6617780649259944,0.35205164489702556,0.8215686274509804,0.6183243624248146,0.23426645879164779,0.3215686274509804,0.2837773104940535,0.25710692920880635,0.6,0.45156862745098036&swatchOrder=0,1,2,3,4
 
-
+$my-white-translucent: rgba(255,255,255,.66);
 //The_Blues
 $my-baby-blue: rgba(120,185,235,1.0);
 $my-light-blue: rgba(124,172,209,1.0);
@@ -148,6 +148,106 @@ body {
  * My Styles
  */
 
+nav {
+    position: relative;
+
+    .nav-box{
+        display: inline-block;
+        border-radius: 0px;
+    }
+
+    .fixed-right-simple {
+        position: fixed;
+        top: 5px;
+        right: 10px;
+        z-index: 4;
+
+            .contact-anchor,
+            .burger-box{
+                display: inline-block;
+                transition: background .2s;
+                &:hover{
+                    background: $my-baby-blue;
+                }
+            }
+            
+            .burger-box{
+                background: $my-dark-gray-translucent;
+                color: rgba(255,255,255,1.0);
+        
+            }
+
+            .contact-anchor {
+                background: $my-medium-green-translucent;
+                color: #fff;
+                margin-right: .5rem;   
+            }
+
+            
+    }
+
+    .fixed-right-full {
+        display: block;
+        position: fixed;
+        width: 30rem;
+        height: 100%;
+        z-index: 5;
+        top: 0px;
+        right: -30rem;
+        background: rgba(44,44,44,.95);
+        color: rgba(255,255,255,1);
+        text-align: left;
+        padding: 8px 1.5rem;
+        transition: right .3s;
+
+    &.active{
+        display: block;
+        right: 0rem;
+        height: 100%;
+    }
+
+        .exit-nav{
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            background: $my-white-translucent;
+            color: rgba(104,44,22,1);
+            transition: background .2s;
+            &:hover{
+                background: $my-dark-gray;
+                color: $my-white-translucent;
+            }
+        }
+        
+        h3{
+            margin-top: 0
+        }
+
+        ul{
+            list-style-type: none;
+            padding: 0;
+
+                a, 
+                a:visited{
+                text-decoration: none;
+                }
+
+                li{
+                    font-size: 18px;
+                    padding: 2.4rem 1.0rem;
+                    width: 55%;
+                    color: rgba(255,255,255,1);
+                    transition: background .2s;
+                    
+                     &:hover{
+                        background: $my-white-translucent;
+                        color: $my-dark-gray;
+                }
+
+             }
+        }
+    }
+}
 
 header {
     display: table;
@@ -157,39 +257,6 @@ header {
     width: 100%;
     position: relative;
 }
-
-.fixed-right {
-    position: fixed;
-    top: 5px;
-    right: 10px;
-    z-index: 5;
-    font-size: 0px;
-
-    .contact-anchor,
-    .nav-burger{
-        transition: background .2s;
-        &:hover{
-            background: $my-baby-blue;
-        }
-    }
-
-    .contact-anchor {
-        display: inline-block;
-        background: $my-medium-green-translucent;
-        color: #fff;
-        margin-right: .5rem;   
-    }
-
-    .nav-burger{
-        display: inline-block;
-        background: $my-dark-gray-translucent;
-        color: rgba(255,255,255,1.0);
-        border-radius: 0px;
-    }
-
-}
-
-
 
 .h-greeting {
     color: rgba(47,65,83,1);
@@ -229,14 +296,12 @@ header {
     width: 100%;
     position: relative;
 
-    .content {
+    .testimonials {
         position: relative;
         z-index: 2;
-        h2{
-            color: rgba(255,255,255,1);
-            padding: 15% 5%
-        }
-        }
+        color: rgba(255,255,255,1);
+        padding: 6% 3% 6% 3%;
+    }
 
     .underlay {
       position: absolute; /* could also be absolute */ 
