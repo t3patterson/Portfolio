@@ -6,6 +6,7 @@
 //Greens: https://color.adobe.com/create/color-wheel/?base=2&rule=Monochromatic&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.1377958705563537,0.3215686274509804,0.24201717288226635,0.3214233736745816,0.9215686274509803,0.6617780649259944,0.35205164489702556,0.8215686274509804,0.6183243624248146,0.23426645879164779,0.3215686274509804,0.2837773104940535,0.25710692920880635,0.6,0.45156862745098036&swatchOrder=0,1,2,3,4
 
 $my-white-translucent: rgba(255,255,255,.66);
+
 //The_Blues
 $my-baby-blue: rgba(120,185,235,1.0);
 $my-light-blue: rgba(124,172,209,1.0);
@@ -93,7 +94,7 @@ $my-medium-green-translucent: rgba(63,147,111,.6);
  * GENERAL
  */
 
-img {max-width:100%;}
+img{max-width:100%;}
 
 body {
     transition: opacity .25s ease;
@@ -343,11 +344,11 @@ header {
     }
 
     .work-container{
-        outline: 1px solid rgba(200,0,0,.3);
+        border: 1px solid $my-dark-blue-translucent;
         padding: 2.5%;
 
         img{
-            max-width: 40%;
+            max-width: 50%;
         }
     }
 
