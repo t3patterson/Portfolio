@@ -257,7 +257,7 @@ nav {
 
 header {
     display: table;
-    background: url('../images/the-look.jpg') center center no-repeat scroll;
+    background: url('../images/trade-tool.jpg') center center no-repeat scroll;
     background-size: cover;
     height: 60rem;
     width: 100%;
@@ -265,15 +265,42 @@ header {
 }
 
 .h-greeting {
-    color: rgba(47,65,83,1);
+    background: $my-dark-blue-translucent;
+    color: #fff;
     font-weight: 700;
+    margin-left: -15px;
+    margin-top: 15%;
+    width: 100%;
+    padding: 0 1% 1% 2%;
+
     
     h1{
-        font-size: 96px;
+        font-size: 72px;
+        margin: 0;
+    }
+
+    h3{
+        text-align: right;
+    }
+
+    .find-out-btn-lg{
+        display: block;
+        margin: 0 auto;
+        width: 7rem;    
+
+        padding: 1.05rem;
+        
+        background: $my-light-blue;
+        color: rgba(255,255,255,1.0);
+        font-size: 16px;
+        transition: background .4s;
+        &:hover{
+            background: rgba(133,133,133,.8);
+        }
     }
 }
 
-.about{
+.quick-about{
     text-align: center;
     padding: 3rem;
 }
@@ -296,7 +323,7 @@ header {
 
 .details{
     display: table;
-    background: url('../images/nebula.jpg') center center no-repeat scroll;
+    background: url('../images/tech-display.jpg') center center no-repeat scroll;
     background-size: cover;
     width: 100%;
     position: relative;
@@ -404,6 +431,13 @@ footer{
     }
 }
 
-
+@media screen and (min-width: 460px){
+    .h-greeting {
+        width: 45%;
+        min-width: 440px;
+        h1{font-size: 96px;}
+    }
+        
+}
 
 
