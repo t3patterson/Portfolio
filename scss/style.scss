@@ -16,6 +16,8 @@ $my-dark-blue-translucent: rgba(47,65,82,.7);
 $my-dark-gray: rgba(89,96,102,1.0);
 $my-dark-gray-translucent: rgba(89,96,102,.7);
 
+$my-med-gray-translucent: rgba(200,200,200,.5);
+
 //The_Greens
 $my-medium-green: rgba(63,147,111,1);
 $my-medium-green-translucent: rgba(63,147,111,.6);
@@ -316,8 +318,14 @@ header {
         font-weight: 400;
     }
     .btn-learn-more {
-        background: rgba(255,255,255,.8);
-        padding: 1.05rem
+        color: #fff;
+        background: $my-med-gray-translucent;
+        padding: 1.05rem;
+        animation: .4s background;
+        
+        &:hover{
+            background: $my-light-blue;
+        }
     } 
 }
 
@@ -372,7 +380,6 @@ header {
     .work-container{
         border: 1px solid $my-dark-blue-translucent;
         padding: 2.5%;
-
         img{
             max-width: 50%;
         }
@@ -391,18 +398,22 @@ header {
     h3{
         margin-top: 0
     }
+
+    .work-container{
+        margin-bottom: 3rem;
+
+        &:nth-last-of-type(1){
+            margin: 0;
+        }
+    }
     button {
         background: $my-dark-blue-translucent;
     
         &.selected{
             background: #ddd;
-            color: $my-dark-blue-translucent
-
+            color: $my-dark-blue-translucent;
         }
-    
     }
-
-
 }
 
 footer{
@@ -430,6 +441,79 @@ footer{
         position: absolute;
     }
 }
+
+
+.mdl-context{
+  opacity: 0;
+  position: fixed;
+  visibility: hidden;
+  transition: all .5s;
+  z-index: 2000;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+    .mdl-window{
+      padding: 1rem;
+      width: 400px;
+      height: 300px;
+      transition: all .5s;
+      background: $my-medium-green;
+      color: rgba(255,255,255,1);
+
+      font-size: 18px;
+            
+      a:link, a:visited{
+        color: rgba(200,200,200,1);
+        text-decoration: underline;
+      }
+
+      .exit-modal{
+          position: fixed;
+          top: 2%;
+          right: 2%;
+          background: rgba(255,255,255,.76);
+          color: maroon;
+          border: black solid 1px;
+          transform: translateX(2%) translateY(2%);
+          padding: .5em .75em;
+        
+        &:hover{
+          background: rgba(150,150,150,.9);
+        }
+      } 
+    }
+}
+
+.mdl-overlay{
+  visibility: hidden;
+  position: fixed;
+  opacity: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;  
+  background-color: rgba(100,100,100,.7);
+  transition: all .4s;
+}
+
+.mdl-show {
+  & ~ .mdl-overlay,
+  &.mdl-context{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.mdl-effect-drop{
+  top: 0%;
+  &.mdl-show{
+    top: 50%;
+  }
+}
+
+
 
 @media screen and (min-width: 460px){
     .h-greeting {

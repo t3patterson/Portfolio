@@ -10,6 +10,7 @@
         $('.fixed-right-full').toggleClass('active');
     })
 
+    //handles
     $('a[href*=#]:not([href=#])').on('click',function() {
 
         //location.pathname takes everything after the hostname
@@ -34,5 +35,25 @@
             }
         }
     });
+
+    //handles modal
+    $(".find-out-btn-lg").on('click',function(evt){
+      
+            console.log('overlay')
+            var insertOverlay = function(e){
+                var effect = $(e.target).attr('data-effect');
+                console.log(effect)
+                $('.mdl-context'+'.'+effect).addClass('mdl-show')
+            }
+            
+            var removeOverlay = function(){
+                $('.mdl-context').removeClass('mdl-show');
+            }
+            
+            insertOverlay(evt);
+            $('.mdl-overlay').on('click', removeOverlay)
+            $('.exit-modal').on('click', removeOverlay)
+    })  
+    
 
 })(typeof module === "object" ? module.exports : window);

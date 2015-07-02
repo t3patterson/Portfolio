@@ -10,8 +10,28 @@
 </head>
 
 <body class="general">
-
+	<div class="mdl-context mdl-effect-drop">
+		    <div class="mdl-window">
+		        <h3>About me:</h3>
+		        <ul>
+		        		<li><p>Based out of Houston, TX.<br></p></li>
+		        		<li><p>Design and develop professional websites.<br></p></li>
+		        		<li><p>Responsive design for mobile, tablet, and desktop devices.<br></p></li>
+		        		<li>Integration of client application with a backend-database or API.
+		        		</li>
+		        </ul>
+		        </p>
+		        <button class="exit-modal">X</button>
+		    </div>
+		</div>
+		
+		<div class="mdl-overlay">
+		</div>
+	
     <div class="wrapper">
+	    
+
+
     	<!-- Hamburger Navigation Button -->
   		<nav>
 	  		<div class="fixed-right-simple">
@@ -55,7 +75,7 @@
   				<h1>Travis Hubbard</h1>
   				<h3>front-end web developer</h3>
 				<br>
-				<a class='btn find-out-btn-lg'>About</a>
+				<a class="modal-btn btn find-out-btn-lg" data-effect="mdl-effect-drop">Drop</a>
   			</div>
   		</header>
 
@@ -90,7 +110,7 @@
 							<br>
 		  			</div>
 		  			<div class="col-xs-12">
-							<a class="btn btn-learn-more">Check Out My Work</a>
+							<a class="btn btn-learn-more" href="#my-work">Check Out My Work</a>
 
 		  			</div>
 	  			</div>
@@ -113,10 +133,8 @@
   				</blockquote>
   			</div>
   		</div>
-
+	
 	<div class="container-fluid my-work">
-		<a name="my-work"></a>
-
   		<h2>My Skills</h2>
   		<hr>
   		<div class="container-fluid">
@@ -142,13 +160,12 @@
 	  		</div>
   		</div>
 
-  		<button class="btn find-out-btn-sm">More Examples</button>
 
   	</div>
 
 	
   	<div class="container-fluid before-after">
-  		<a name="contact"></a>
+  		<a name="my-work"></a>
   		<h2>Portfolio</h2>
   		<hr>
 		<div class="container-fluid">
@@ -166,17 +183,24 @@
 						<img src="./images/ui-widgets.jpg" alt="">
 					</div>
 				</div>
+				<div class="col-xs-12 work-container">	
+				  	<button class="btn find-out-btn-sm">More Examples</button>
+				</div>
 			</div>
+			  		
+
 		</div>	
   	</div>
 	
 	<footer class="container-fluid">
+	  	<a name="contact"></a>
+
 		<h2>Try me out some time</h2>
 		<hr>
 		<p>
 			<i class="fa fa-envelope-o"></i> t3patterson@gmail.com
 			<br>
-			<i class="fa fa-map-marker"></i> Front-End Web Developer
+			<i class="fa fa-map-marker"></i> Houston, TX
 			<br>
 			<a href="https://www.linkedin.com/pub/travis-p-hubbard/70/846/57">
 				<i class="fa fa-linkedin fa-2x"></i>
@@ -189,7 +213,7 @@
 		<h6>Copyright: Travis Hubbard 2015</h6>
 		<br><br><br><br><br><br><br><br><br><br>	
 	</footer>
-
+	
     </div>
     <!-- if using loader, use the line below -->
     <script type="text/javascript" src="./bower_components/Loader/loader.js" id="loaderjs" data-app="./js/app.js"></script>
