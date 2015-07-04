@@ -378,6 +378,7 @@ header {
     }
 
     .work-container{
+
         border: 1px solid $my-dark-blue-translucent;
         padding: 2.5%;
         img{
@@ -400,6 +401,10 @@ header {
     }
 
     .work-container{
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
         margin-bottom: 3rem;
 
         &:nth-last-of-type(1){
