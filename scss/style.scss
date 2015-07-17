@@ -129,11 +129,11 @@ hr{
 
 .find-out-btn-sm {
     padding: .85rem;
-    
     background: rgba(77,77,77,.7);
     color: rgba(255,255,255,1.0);
     font-size: 14px;
     transition: background .4s;
+
     &:hover{
         background: rgba(133,133,133,.8);
     }
@@ -228,7 +228,7 @@ nav {
         }
         
         h3{
-            margin-top: 0
+            margin-top: 0;
         }
 
         ul{
@@ -279,6 +279,8 @@ header {
     h1{
         font-size: 72px;
         margin: 0;
+        font-family: 'Helvetica Neue', 'Helvetica',sans-serif;
+        font-weight: 200;
     }
 
     h3{
@@ -378,7 +380,6 @@ header {
     }
 
     .work-container{
-
         border: 1px solid $my-dark-blue-translucent;
         padding: 2.5%;
         img{
@@ -401,14 +402,14 @@ header {
     }
 
     .work-container{
+        margin-bottom: 3rem;
+
         a{
             text-decoration: none;
             color: #fff;
         }
-        margin-bottom: 3rem;
-
         &:nth-last-of-type(1){
-            margin: 0;
+            margin-bottom: 1.5rem;
         }
     }
     button {
